@@ -1,0 +1,82 @@
+{% extends "layout.html" %}
+
+{%  block main %}
+    <div class="wrapper row3">
+        <div class="rounded">
+            <main class="container clear">
+
+            <!-- main body -->
+            <ul>
+                {% for row in data %}
+                <li>
+                  <article>
+                    <header>
+                    <button class="collapsible">{{ row.questions }}</button>
+                    <div class="content">
+                        <div class="comcont">
+                            <br><br>
+                            <p>{{ row.answers }}</p>
+                            <br><br>
+                        </div>
+                        <div></div>
+                    </div>
+                    </header>
+                  </article>
+                </li>
+                <br>
+                {% endfor %}
+            </ul>
+            <!-- / main body -->
+
+            <style>
+            .collapsible {
+              background-color: #777;
+              color: white;
+              cursor: pointer;
+              padding: 18px;
+              width: 100%;
+              border: none;
+              text-align: left;
+              outline: none;
+              font-size: 15px;
+            }
+
+            .collapsible:after {
+              content: '\002B';
+              color: white;
+              font-weight: bold;
+              float: right;
+              margin-left: 5px;
+            }
+
+            .content {
+              padding: 0px 18px;
+              max-height: 0;
+              overflow: hidden;
+              transition: max-height 0.3s ease-out;
+              background-color: #f1f1f1;
+            }
+            </style>
+
+            <script>
+            var coll = document.getElementsByClassName("collapsible");
+            var i;
+
+            for (i = 0; i < coll.length; i++) {
+              coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.maxHeight){
+                  content.style.maxHeight = null;
+                } else {
+                  content.style.maxHeight = content.scrollHeight + "px";
+                }
+              });
+            }
+            </script>
+            <div class="clear"></div>
+            </main>
+        </div>
+    </div>
+{% endblock %}
+

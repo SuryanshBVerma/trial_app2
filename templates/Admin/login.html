@@ -1,0 +1,56 @@
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<!------ Include the above in your HEAD tag ---------->
+
+<div class="container">
+    <br><br><br><br><br>
+    <div id="loginbox" class="mainbox col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3">
+
+        <div class="row">
+            <div class="iconmelon">
+                <g filter="">
+                  <use xlink:href="#git"></use>
+                </g>
+            </div>
+
+
+
+        <div class="panel panel-default" >
+            <div class="panel-heading">
+                <div class="panel-title text-center">Admin Login</div>
+            </div>
+
+            <div class="panel-body" >
+
+                <form action = "/admin/login" name="form" id="form" class="form-horizontal" enctype="multipart/form-data" method="POST">
+
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                        <input id="user" autofocus autocomplete = "off" type="text" class="form-control" name="username" value="" placeholder="Username">
+                    </div>
+
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                        <input id="password" type="password" class="form-control" name="password" placeholder="Password">
+                    </div>
+
+                    <br>
+
+                    <div class="form-group">
+                        <!-- Button -->
+                        <div class="col-sm-12 controls">
+                            <button type="submit" href="#" class="btn btn-primary pull-right"><i class="glyphicon glyphicon-log-in"></i> Log in</button>
+                            <a href="/admin/forgot_password" class="btn btn-link">
+                                Forgot Your Password?
+                            </a>
+                        </div>
+                    </div>
+
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+

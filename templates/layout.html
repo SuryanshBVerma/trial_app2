@@ -1,0 +1,160 @@
+<html>
+    <head>
+        <title>CU Students Helpdesk</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <link href="/static/css/layout.css" rel="stylesheet" type="text/css" media="all">
+    </head>
+
+    <body id="top">
+        <div class="wrapper row1">
+            <header id="header" class="clear">
+
+                <div id="logo" class="fl_left">
+                    <h1><a href="/tampletes/index.html">CU Students Helpdesk</a></h1>
+                    <p>By CU students for the prospective Cottonians</p>
+                </div>
+
+                <div id="logo" class="fl_right"><p>
+                    <a href="https://cottonuniversity.ac.in/"><img src="/static/images/rsz_logo.png" alt=""></a></p>
+                </div>
+
+            </header>
+        </div>
+
+        <div class="wrapper row2">
+            <div class="rounded">
+                <nav id="mainav" class="clear">
+
+                    <ul class="clear">
+
+                        <li class="active">
+                            <a href="/">Home</a>
+                        </li>
+
+                        <li>
+                            <a class="drop" href="#">Departments</a>
+                            <ul>
+                                <li><a href="#">Department Of CSIT</a></li>
+                                <li><a href="#">Department Of Economics</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a class="drop" href="#">Hostels</a>
+                            <ul>
+                                <li><a href="#">MNDP</a></li>
+                                <li><a href="#">RKB</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a class="drop" href="#">Clubs &amp; Societies</a>
+                            <ul>
+                                <li><a href="#">Cotton Study Circle</a></li>
+                                <li><a href="#">Boro Society</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="/gallery">Gallery</a>
+                        </li>
+
+                        <li>
+                            <a class="drop" href="#">FAQ Page</a>
+                            <ul>
+                                <li><a href="/FAQ/general">General</a></li>
+                                <li><a href="/FAQ/departments">Departments</a></li>
+                                <li><a href="/FAQ/hostels">Hostels</a></li>
+                                <li><a href="/FAQ/society">Society</a></li>
+                                <li><a href="/FAQ/comments">User Comments</a></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+
+
+        <main>
+            {% block main %} {% endblock %}
+        </main>
+
+        <div class="wrapper row4">
+            <div class="rounded">
+                <footer id="footer" class="clear">
+
+                    <div class="one_third first">
+                        <figure class="center"><a href='https://goo.gl/maps/kEcGoiP2uQJrpRTG7'><img class="btmspace-15" src="/static/images/map1.png" alt=""></a>
+                        <figcaption><a href="https://goo.gl/maps/kEcGoiP2uQJrpRTG7">Find Us With Google Maps &raquo;</a></figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="one_third">
+                        <address>
+                            Hem Baruah Rd <br> Pan Bazaar <br> Guwahati <br> Assam - 781001
+                            <br>
+                            <i class="fa fa-phone pright-10"></i> xxxx xxxx xxxxxx<br>
+                            <i class="fa fa-envelope-o pright-10">   <a href="#">studentshelpdeskcottonuniversity@gmail.com</a></i>
+                        </address>
+                    </div>
+
+                    <div class="one_third">
+                        <p class="nospace btmspace-10">Stay Up to Date With What's Happening</p>
+                        <ul class="faico clear">
+                            <li><a class="faicon-twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a class="faicon-linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a class="faicon-facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a class="faicon-instagram" href="#"><i class="fa fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+
+                </footer>
+            </div>
+        </div>
+
+        <div class="wrapper row5">
+            <div id="copyright" class="clear">
+                <p class="fl_left">Copyright &copy; 2021 - All Rights Reserved - <a href="#">studentshelpdeskcottonuniversity.com</a></p>
+            </div>
+        </div>
+
+        <!--chaaaaaaaaaaaaaaaat-->
+        <a class="float" onclick="openForm()">
+            <i class="fa fa-comments my-float"></i>
+        </a>
+
+
+
+        <div class="form-popup" id="myForm">
+            <form class="form-container">
+                <a class="cancel" onclick="closeForm()">X</a>
+                <input type="text" placeholder="Name">
+                <input type="text"  placeholder="Email">
+                <input type="text" placeholder="Ask Your Question..." name="question" required>
+                <button type="submit" class="btn" >Send</button>
+            </form>
+        </div>
+
+
+        <script>
+            function openForm() {
+              document.getElementById("myForm").style.display = "block";
+            }
+
+            function closeForm() {
+              document.getElementById("myForm").style.display = "none";
+            }
+        </script>
+
+        <!-- JAVASCRIPTS -->
+        <script src="/static/js/jquery.min.js"></script>
+        <script src="/static/js/jquery.fitvids.min.js"></script>
+        <script src="/static/js/jquery.mobilemenu.js"></script>
+        <script src="/static/js/jquery.tabslet.min.js"></script>
+
+    </body>
+</html>
+
